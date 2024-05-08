@@ -10,7 +10,10 @@
         </div>
 
         <div class="col-auto">
-            <span>Algo de informacion</span>
+            <span customLabel
+                [color]="color"
+                [errors]="myForm.get('name')?.errors">
+                </span>
         </div>
     </div>
     <div class="row">
